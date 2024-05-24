@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Темний фон */
+    color: #e0e0e0; /* Світлий текст */
+  }
+  
+  .dog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .dog-item {
+    background-color: #1e1e1e; /* Темніші картки */
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease; /* Додатковий ефект при наведенні */
+  }
+  
+  .dog-item:hover {
+    transform: scale(1.05); /* Збільшення при наведенні */
+  }
+  
+  .dog-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .dog-item h3 {
+    margin: 10px 0 5px 0;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Темніший фон для модального вікна */
+  }
+  
+  .modal-content {
+    background-color: #1e1e1e;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    color: #e0e0e0; /* Світлий текст */
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #modalImage {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  #modalTitle {
+    margin-top: 10px;
+  }
+  
+  #adoptButton {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #adoptButton:hover {
+    background-color: #3700b3;
+  }
+  
